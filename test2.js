@@ -1,21 +1,21 @@
-console.log("Hello! I'm your coding fun fact guide!");
+let adjective = "mighty";
+let noun = "dragon";
+let verb = "angry";
+let place = "a lonely mountain cave";
+let adjective2 = "smoky";
+let noun2 = "tacos";
 
-let botName = "cheat";
-let botLocation = "computer space";
-let favoriteLanguage = "beeps";
+const firstStory = "Once upon a time, there was a(n) " + adjective + " " + noun + " who loved to eat " + noun2 + ". The " + noun + " lived in a " + place + " and had " + adjective2 + " nostrils that blew fire when it was " + verb + ".";
 
-console.log("My name is " + botName + " and I live on " + botLocation + ".");
+console.log("First story: " + firstStory);
 
-console.log("My favorite programming language is " + favoriteLanguage + ".");
+adjective = "tiny";
+noun = "hanmster";
+noun2 = "sunflower seed";
+place = "a golden cage";
+adjective2 = "twitchy";
+verb = "excited";
 
-let codingFact = "My favorite programming language is " + favoriteLanguage + ".";
+const secondStory = "Once upon a time, there was a(n) " + adjective + " " + noun + " who loved to eat " + noun2 + ". The " + noun + " lived in a " + place + " and had " + adjective2 + " nostrils that blew fire when it was " + verb + ".";
 
-console.log(codingFact);
-
-codingFact = "I started learning" + favoriteLanguage + " around 3 months ago.";
-console.log(codingFact);
-
-codingFact = "I like " + favoriteLanguage + "because it is the most simple language ever.";
-console.log(codingFact);
-
-console.log("It was fun sharing these facts with you. Goodbye! - " + botName + " from " + botLocation + ".");
+console.log("Second story: " + secondStory);

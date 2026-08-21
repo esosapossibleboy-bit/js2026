@@ -1,28 +1,25 @@
-const userInput = "   Hello World!   ";
-console.log("Original input:");
-console.log(userInput);
+console.log("Original string:");
+console.log(originalString);
 
-const cleanedInput = userInput.trim();
-console.log("Result of trimming whitespace from both ends:");
-console.log(cleanedInput);
+const replacedString = originalString.replace("cats", "dogs");const originalString = "I love cats.";
 
-const trimmedStart = userInput.trimStart();
-console.log("After using the trimStart() method, leading spaces removed:");
-console.log(trimmedStart);
+console.log("After using the replace() method:");
+console.log(replacedString);
 
-const trimmedEnd = userInput.trimEnd();
-console.log("After using the trimEnd() method, trailing spaces removed:");
-console.log(trimmedEnd);
+const exampleSentence = "I love cats and cats are so much fun!";
+console.log("Original sentence:");
+console.log(exampleSentence);
 
-const upperCaseInput = cleanedInput.toUpperCase();
-console.log("Result of using the toUpperCase() method:");
-console.log(upperCaseInput);
+const dogsOnlySentence = exampleSentence.replaceAll("cats", "dogs");
+console.log("Replacing all occurrences of cats with dogs:");
+console.log(dogsOnlySentence);
 
-const lowerCaseInput = cleanedInput.toLowerCase();
-console.log("Result of using the toLowerCase() method:");
-console.log(lowerCaseInput);
+const learningSentence = "I love learning!";
+console.log("Original learning sentence:");
+console.log(learningSentence);
 
-const lowercaseWord = "camelcase";
-const camelCasedVersion = lowercaseWord.slice(0, 5) + lowercaseWord[5].toUpperCase() + lowercaseWord.slice(-3);
-console.log("Camel cased version:");
-console.log(camelCasedVersion);
+const repeatedLove = "love ".repeat(3).trimEnd();
+console.log(repeatedLove);
+
+const newSentence = `I ${repeatedLove} learning.`;
+console.log(newSentence);

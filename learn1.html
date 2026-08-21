@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Working with the HTML Video Element</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML Audio and Video Lab</title>
 </head>
 <body>
-  <h1>Working with the HTML Video Element</h1>
-  <video
-    width="640"
-    loop
-    controls
-    muted
-    poster="https://cdn.freecodecamp.org/curriculum/labs/past-event2.jpg"
-  >
-    <source
-      src="https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.mp4"
-      type="video/mp4"
-    >
-    <source
-      src="https://cdn.freecodecamp.org/curriculum/labs/mapmethod.webm"
-      type="video/webm"
-    >
-    <source
-      src="https://cdn.freecodecamp.org/curriculum/labs/mapmethod.ogg"
-      type="video/ogg"
-    >
-    <source src="https://cdn.freecodecamp.org/curriculum/labs/mapmethod.mov" type="video/quicktime">
-  </video>
+  
+  <!-- 1. h1 element for the main title -->
+  <h1>My Media Player App</h1>
+
+<!-- 2. First section element -->
+  <section>
+    <!-- 3. h2 element for the video title -->
+    <h2>Video Presentation</h2>
+
+    <!-- 4. video element with controls and width set to 640 -->
+    <video controls width="640">
+
+      <!-- 5. source element with src and type attributes -->
+      <source src="https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.mp4"
+      type="video/mp4">
+      </video>
+      </section>
+
+      <!-- 2. second section element -->
+      <section>
+        <!-- 6. h2 element for the song title -->
+        <h2>Audio Track</h2>
+
+        <!-- 7. audio element with controls, loop, and src attributes -->
+        <audio src="https://cdn.freecodecamp.org/curriculum/js-music-player/we-are-going-to-make-it.mp3" loop controls></audio>
+        </section>
+
+
 </body>
 </html>

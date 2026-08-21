@@ -1,25 +1,19 @@
-console.log("Original string:");
-console.log(originalString);
+const hasDeveloperJob = true;
 
-const replacedString = originalString.replace("cats", "dogs");const originalString = "I love cats.";
+if (hasDeveloperJob) {
+  console.log("Timmy is employed as a developer.");
+}
 
-console.log("After using the replace() method:");
-console.log(replacedString);
+const isTimmyAGamer = false;
 
-const exampleSentence = "I love cats and cats are so much fun!";
-console.log("Original sentence:");
-console.log(exampleSentence);
+if (isTimmyAGamer) {
+  console.log("Timmy loves to play World of Warcraft.");
+}
 
-const dogsOnlySentence = exampleSentence.replaceAll("cats", "dogs");
-console.log("Replacing all occurrences of cats with dogs:");
-console.log(dogsOnlySentence);
+const timmyAge = 15;
 
-const learningSentence = "I love learning!";
-console.log("Original learning sentence:");
-console.log(learningSentence);
-
-const repeatedLove = "love ".repeat(3).trimEnd();
-console.log(repeatedLove);
-
-const newSentence = `I ${repeatedLove} learning.`;
-console.log(newSentence);
+if (timmyAge >= 16) {
+  console.log("Timmy is old enough to drive.");
+} else {
+  console.log("Timmy is not old enough to drive.");
+}

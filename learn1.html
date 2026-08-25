@@ -1,63 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book Catalog</title>
-</head>
-<body>
+  <body>
 
-    <!-- Table Head -->
-    <table>
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Author</th>
-        <th>Genre</th>
-        <th>Publication Year</th>
-      </tr>
-      </thead>
-    <tbody>
-      <tr>
-        <td>The Great Gatsby</td>
-        <td>F. Scott Fitzgerald</td>
-        <td>Fiction</td>
-        <td>1925</td>
-    </tr>
-    <tr>
-      <td>To Kill a Mockingbird</td>
-      <td>Harper Lee</td>
-      <td>Fiction</td>
-      <td>1960</td>
-    </tr>
-    <tr>
-      <td>1984</td>
-      <td>George Orwell</td>
-      <td>Dystopian</td>
-      <td>1949</td>
-    </tr>
-    <tr>
-      <td>The Hobbit</td>
-      <td>J.R.R. Tolkien</td>
-      <td>Fantasy</td>
-      <td>1937</td>
-    </tr>
-    <tr>
-      <td>A Brief History of Time</td>
-      <td>Stephen Hawking</td>
-      <td>Science</td>
-      <td>1988</td>
-    </tr>
-    </tbody>
-    <tfoot>
-      <tr>
-        <td colspan="4">Total Books: 5</td>
-      </tr>
-      </tbody>
-  </table>
-<!-- Your Book Catalog Table Ends Here -->
+    <h1 id="title">Gym Feedback Survey</h1>
+    <p id="description">Thank you for helping us improve our gym</p>
+
+    <form id ="survey-form">
+
+      <!-- NAME -->
+      <label id="name-label" for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <!-- EMAIL -->
+      <label id="email-label" for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <!-- NUMBER -->
+      <label id="number-label" for="number">Age</label>
+      <input type="number" id="number" min="10" max="99"
+      placeholder="Enter your age">
+
+      <!-- DROPDOWN -->
+      <label for="dropdown">Membership Type</label>
+      <select id="dropdown">
+        <option value="select one">Select one</option>
+        <option value="monthly">Monthly</option>
+        <option value="yearly">Yearly</option>
+      </select>
+
+      <!-- RADIO BUTTONS -->
+      <p>Would you recommend us?</p>
+      <label>
+        <input type="radio" name="recommend" value="yes">Yes</label>
+      <label>
+        <input type="radio" name="recommend" value="no">No
+      </label>
+
+      <!-- CHECKBOXES -->
+      <p>What do you like? (check all that apply)</p>
+      <label><input type="checkbox" value="equipment">Equipment</label>
+      <label><input type="checkbox" value="trainers">Trainers</label>
+      <label><input type="checkbox" value="timing">Timing
+      </label>
+
+      <!-- TEXTARA -->
+      <p>Additional Comments</p>
+      <textarea placeholder="Enter your comments here..."></textarea>
+
+      <!-- SUBMIT BUTTON -->
+      <button id="submit" type="submit">Submit</button>
+
+      </form>
+      
 
 
-</body>
+
+
+
+      
+  </body>
 </html>

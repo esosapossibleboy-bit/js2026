@@ -1,61 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <title>Event Hub</title>
-</head>
-
-<body>
-    <!-- The header element is the first element inside the body -->
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hotel Feedback Form</title>
+  </head>
+  <body>
     <header>
-        <h1>Event Hub</h1>
-        <nav>
-            <ul>
-                <li><a href="#upcoming-events">Upcoming Events</a></li>
-                <li><a href="#past-events">Past Events</a></li>
-                <ul>
-                    </nav>
-                    </header>
+      <h1>Hotel Feedback Form</h1>
+      <p>
+        Thank you for staying with us. Please provide feedback on your recent
+        stay.
+      </p>
+    </header>
+    <main>
+      <form method="POST" action="https://hotel-feedback.freecodecamp.org">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="full-name">Name (required):</label>
+          <input type="text" id="full-name" name="name" placeholder="e.g., John Doe" required size="20">
 
-                    <!-- Main element containing the content sections -->
-                    <main>
-                        <!-- Section 1: Upcoming Events -->
-                        <section id="upcoming-events">
-                            <h2>Upcoming Events</h2>
+          <label for="email">Email address (required):</label>
+          <input
+            placeholder="example@email.com"
+            required
+            id="email"
+            type="email"
+            name="email"
+            size="20"
+          />
+          <label for="age">Age (optional):</label>
+          <input type="number" name="age" id="age" min="3" max="100" />
+        </fieldset>
 
-                            <article>
-                                <h3>Tech Innovators Summit</h3>
-                                <p>Join us for an exciting day of presentations from leading minds in technology and AI.</p>
-                                <p>Date: September 15, 2026</p>
-                                </article>
+        <fieldset>
+          <legend>Was this your first time at our hotel?</legend>
+          <input id="yes-option" type="radio" name="hotel-stay" value="yes" />
+          <label for="yes-option">Yes</label>
+          <input id="no-option" type="radio" name="hotel-stay" value="no" />
+          <label for="no-option">No</label>
+        </fieldset>
 
-                                <article>
-                                    <h3>Community Clean-Up</h3>
-                                    <p>Date: October 2, 2026</p>
-                                    </article>
-                                    </section>
+        <fieldset>
+          <legend>
+            Why did you choose to stay at our hotel? (Check all that apply)
+          </legend>
 
-                                    <!-- Selection 2: Past Events -->
-                                    <section id="past-events">
-                                    <h2>Past Events</h2>
-                                    
-                                    <article>
-                                        <h3>Annual Food Festival</h3>
-                                        <p>A look back at our wonderful weekend celebrating local culinary talent and street food flavours.</p>
-                                        <img src="https://cdn.freecodecamp.org/curriculum/labs/past-event1.jpg" alt="A lively outdoor food festival with various food stalls and crowds of people enjoying meals.">
-                                        <p>Date: june 12, 2026</p>
-                                        </article>
+          <input type="checkbox" id="ads" name="choice" value="ads" />
+          <label for="ads">Social Media Ads</label>
 
-                                        <article>
-                                            <h3>Acoustic Music Night</h3>
-                                            <p>An intimate evening featuring acoustic performances by local indie artists and songwriters.</p>
-                                            <img src="https://cdn.freecodecamp.org/curriculum/labs/past-event2.jpg" alt="A cozy indoor stage with a microphone and a musician playing an acoustic guitar uder warm stage lights.">
-                                            <p>Date: july 24, 2026</p>
-                                            </article>
-                                            </section>
-                                            </main>
+          <input
+            type="checkbox"
+            id="recommendation"
+            name="choice"
+            value="recommendation"
+          />
+          <label for="recommendation">Personal Recommendation</label>
+          
+          <input type="checkbox" id="location" name="choice" value="location" />
+          <label for="location">Location</label>
 
-</body>
+          <input
+            checked
+            type="checkbox"
+            id="reputation"
+            name="choice"
+            value="reputation"
+          />
+          <label for="reputation">Reputation</label>
+          
+          <input type="checkbox" id="price" name="choice" value="price" />
+          <label for="price">Price</label>
+        </fieldset>
 
+        <fieldset>
+          <legend>Ratings</legend>
+
+          <label for="service">How was the service?</label>
+
+          <select name="service" id="service">
+            <option value="poor">Poor</option>
+            <option value="satisfactory">Satisfactory</option>
+            <option value="good">Good</option>
+            <option value="very-good">Very Good</option>
+            <option selected value="excellent">Excellent</option>
+          </select>
+
+          <label for="food">How was the food?</label>
+
+          <select name="food" id="food">
+            <option value="poor">Poor</option>
+            <option value="satisfactory">Satisfactory</option>
+            <option value="good">Good</option>
+            <option value="very-good">Very Good</option>
+            <option selected value="excellent">Excellent</option>
+          </select>
+        </fieldset>
+
+        <label for="comments">Other Comments?</label>
+        <textarea cols="30" rows="10" name="comments" id="comments"></textarea>
+
+<button type="submit">Submit</button>        
+      </form>
+    </main>
+  </body>
 </html>

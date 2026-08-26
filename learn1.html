@@ -1,67 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Survey Form</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Tech Conference 2025 Schedule</title>
+</head>
+<body>
+  <h1>Tech Conference 2025 Schedule</h1>
 
-  <body>
+  <table>
+    <caption>Schedule by Track and Time</caption>
 
-    <h1 id="title">Gym Feedback Survey</h1>
-    <p id="description">Thank you for helping us improve our gym</p>
+    <thead>
+      <tr>
+        <th scope="col">Time</th>
+        <th scope="col">Track A</th>
+        <th scope="col">Track B</th>
+        <th scope="col">Track C</th>
+      </tr>
+    </thead>
 
-    <form id ="survey-form">
+    <tbody>
+      <tr>
+        <th scope="row">9:00 AM</th>
+        <td>Keynote: Tech Future</td>
+        <td>Intro to Web Dev</td>
+        <td>UX for All</td>
+      </tr>
 
-      <!-- NAME -->
-      <label id="name-label" for="name">Name</label>
-      <input type="text" id="name" placeholder="Enter your name" required>
+      <tr>
+        <th scope="row">10:00 AM</th>
+        <td>Accessibility Deep Dive</td>
+        <td>CSS for Beginners</td>
+        <td>Inclusive Design Principles</td>
+      </tr>
 
-      <!-- EMAIL -->
-      <label id="email-label" for="email">Email</label>
-      <input type="email" id="email" placeholder="Enter your email" required>
+      <tr>
+        <th scope="row">11:00 AM</th>
+        <td colspan="3">Break</td>
+      </tr>
 
-      <!-- NUMBER -->
-      <label id="number-label" for="number">Age</label>
-      <input type="number" id="number" min="10" max="99"
-      placeholder="Enter your age">
+      <tr>
+        <th scope="row">11:30 AM</th>
+        <td>AR/VR in Education</td>
+        <td>JavaScript Fundamentals</td>
+        <td>Design Systems at Scale</td>
+      </tr>
 
-      <!-- DROPDOWN -->
-      <label for="dropdown">Membership Type</label>
-      <select id="dropdown">
-        <option value="select one">Select one</option>
-        <option value="monthly">Monthly</option>
-        <option value="yearly">Yearly</option>
-      </select>
+      <tr>
+        <th scope="row">12:30 PM</th>
+        <td colspan="3">Lunch Break</td>
+      </tr>
 
-      <!-- RADIO BUTTONS -->
-      <p>Would you recommend us?</p>
-      <label>
-        <input type="radio" name="recommend" value="yes">Yes</label>
-      <label>
-        <input type="radio" name="recommend" value="no">No
-      </label>
-
-      <!-- CHECKBOXES -->
-      <p>What do you like? (check all that apply)</p>
-      <label><input type="checkbox" value="equipment">Equipment</label>
-      <label><input type="checkbox" value="trainers">Trainers</label>
-      <label><input type="checkbox" value="timing">Timing
-      </label>
-
-      <!-- TEXTARA -->
-      <p>Additional Comments</p>
-      <textarea placeholder="Enter your comments here..."></textarea>
-
-      <!-- SUBMIT BUTTON -->
-      <button id="submit" type="submit">Submit</button>
-
-      </form>
-      
-
-
-
-
-
-      
-  </body>
+<tr>
+  <th scope="row">2:00 PM</th>
+  <td>Voice UI Workshop</td>
+  <td>Git & GitHub Essentials</td> 
+  <td>Color & Contrast in UI</td>
+  </tr>     
+    </tbody>
+  </table>
+</body>
 </html>

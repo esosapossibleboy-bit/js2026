@@ -1,23 +1,35 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Accessible Controls</title>
-  </head>
-  <body>
 
-    <h1>Audio Controls</h1>
+<head>
+    <meta charset="UTF-8" />
+    <title>Checkout Page</title>
+</head>
 
-    <button type="button">Play</button>
+<body>
+  <h1>Checkout</h1>
 
-    <div>
-      <span id="volume-label">Volume</span>
-      <span id="volume-description">Adjust the sound level</span>
-      <input type="range" min="0" max="100" value="50"
-        aria-labelledby="volume-label volume-description">
-    </div>
+<section>
+  <h2>Your Cart</h2>
+  <img src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg" alt="A small blue cube item">
+</section>
 
-<button type="button">Mute</button>    
+<section>
+  <h2>Payment Information</h2>
+<form> 
+<div>
+<label for="card-name">Name on Card <span aria-hidden="true">*</span></label>
+<input type="text" id="card-name" name="card-name" required>
+</div>
 
-  </body>
+<div>
+    <label for="card-number">Card Number <span aria-hidden="true">*</span></label>
+    <input type="text" id="card-number" name="card-number" required aria-describedby="card-number-help">
+    <p id="card-number-help">Format: 123-5678-9012-3456</p>
+</div>
+</form>
+</section>
+
+</body>
+
 </html>

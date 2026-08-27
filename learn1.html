@@ -4,34 +4,45 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Card</title>
+    <title>Styled To-Do List</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
+<ul class="todo-list">
+  <li>
+    <input type="checkbox" id="task1">
+    <label for="task1">Learn HTML</label>
+<ul class="sub-item">
+   <li><a class="sub-item-link" href="https://www.freecodecamp.org" target="_blank">FreeCodeCamp</a></li>
+</ul>
+</li>
+
+<li>
+  <input type="checkbox" id="task2">
+  <label for="task2">Learn CSS</label>
+  <ul class="sub-item">
+  <li><a class="sub-item-link" href="https://www.freecodecamp.org" target="_blank">CSS Tutorial</a></li>
+  </ul>
+  </li>
+
+  <li>
+    <input type="checkbox" id="task3">
+    <label for="task3">Build a Project</label>
+    <ul class="sub-item">
+    <li><a class="sub-item-link" href="https://github.com" target="_blank">GitHub</a></li>
+  </ul>
+  </li>
+
+  <li>
+   <input type="checkbox" id="task4">
+   <label for="task4">Deploy Website</label>
+   <ul class="sub-item">
+   <li><a class="sub-item-link" href="https://netlify.com" target="_blank">Netlify Docs</a></li>
+   </ul>
+   </li>
+   </ul> 
+
 <body>
-
-<div class="business-card">
-    <img class="profile-image" src="https://cdn.freecodecamp.org/curriculum/labs/flower.jpg" alt="Profile picture of a bright pink flower flower in bloom">
-    
-    <p class="full-name">Alex Morgan</p>
-    <p class="designation">Lead Frontend Developer</p>
-    <p class="company">Tech Solutions Inc.</p>
-
-    <hr>
-
-    <p>alex.morgan@example.com</p>
-    <p>+1 (555) 019-2834</p>
-
-    <a class="portfolio-link" href="https://example.com" target="_blanket">Portfolio</a>
-
-    <hr>
-
-    <div class="social-media">
-    <h2>Connect with me</h2>
-    <a href="https://twitter.com" target="_blanket">Twitter</a>
-    <a href="https://linkedin.com" target="_blanket">LinkedIn</a>
-    <a href="https://github.com" target="_blanket">GitHub</a>
-</div>
-</div>
 
 </body>
 

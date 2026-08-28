@@ -1,82 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parent Teacher Conference Form</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-  <main class="container">
-    <h1 class="title center">Parent Teacher Conference Form</h1>
-    <p class="description center">Please fill out the form below to help schedule your parent-teacher conference.</p>
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+  <form>
+<label for="name">Full Name:</label>
+<input type="text" id="name" name="name" required>
 
-     <form>
-        <fieldset>
-          <legend>Student Information</legend>
-          <label for="student-name">Full Name: </label>
-          <input
-            type="text"
-            name="student-name"
-            id="student-name"
-            required
-            placeholder="E.g., Jane Doe"
-          />
+<label for="email">Email Address:</label>
+<input type="email" id="email" name="email" required>
 
-          <label for="grade">Student Grade: </label>
-          <input
-            type="number"
-            name="grade"
-            id="grade"
-            required
-            placeholder="E.g., 4"
-          />
-        </fieldset>
-        
-        <fieldset>
-          <legend>Parent/Guardian Information</legend>
-          <label for="parent-name">Parent/Guardian Name: </label>
-          <input
-            type="text"
-            name="parent-name"
-            id="parent-name"
-            required
-            placeholder="E.g., Nancy Doe"
-          />
-        </fieldset>
+<label for="position">Position:</label>
+<select id="position" name="position" required>
+<option value="">Select a postion</option>
+<option value="developer">Developer</option>
+<option value="designer">Designer</option>
+<option value="manager">Manager</option>
+</select>
 
-        <fieldset>
-          <legend>Preferred Contact Method</legend>
-          <label class="contact-method" for="email">Email: </label>
-          <input
-            id="email"
-            class="contact-method-radio-btn"
-            type="radio"
-            name="contact-method"
-            value="email"
-            checked
-          />
+<fieldset class="radio-group">
+<legend>Availability</legend>
 
-          <label class="contact-method" for="phone">Phone: </label>
-          <input
-            id="phone"
-            class="contact-method-radio-btn"
-            type="radio"
-            name="contact-method"
-            value="phone"
-          />
-        </fieldset>
+<input type="radio" id="full-time" name="availability" value="full-time" required>
+<label for="full-time">Full-Time</label>
 
-        <fieldset>
-          <legend>Additional Notes</legend>
-          <label for="notes"
-            >Any specific concerns or topics you'd like to discuss?</label
-          >
-          <textarea id="notes" name="notes" rows="4" cols="50"></textarea>
-        </fieldset>
+<input type="radio" id="part-time" name="availability" value="part-time">
+<label for="part-time">Part-Time</label>
+</fieldset>
 
-        <button class="submit-btn" type="submit">Submit Form</button>
-      </form>
-  </main>
-  </body>
+<label for="message">Message:</label>
+<textarea id="message" name="message" required></textarea>
+
+<button type="submit">Submit Application</button>
+</form>
+</div>
+
+
+</body>
 </html>

@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Game Settings Panel</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="settings-card">
-      <h1>Game Settings</h1>
-      <label> <input type="checkbox" />Sound Effects</label>
-      <label> <input type="checkbox" />Background Music</label>
-      <label> <input type="checkbox" />Hard Mode</label>
-      <label> <input type="checkbox" />Haptic feedback</label>
-    </div>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feature Selection</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Feature Selection</h1>
+
+  <div class="feature-card-container">
+    <label class="feature-card">
+      <input type="checkbox" name="feature" value="dark-mode">
+      Dark Mode
+    </label>
+
+    <label class="feature-card">
+      <input type="checkbox" name="feature" value="notifications">
+      Notifications
+    </label>
+
+    <label class="feature-card">
+      <input type="checkbox" name="feature" value="auto-save">
+      Auto Save
+    </label>
+  </div>
+
+</body>
 </html>

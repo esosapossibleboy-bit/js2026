@@ -1,50 +1,26 @@
-body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
+#email {
+  padding: 50px; 
+  margin-top: 50px;
+  width: 500px;
+  border: 2px solid black;
+  box-sizing: border-box;
 }
 
-.feature-card-container {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+#confidential, #top-secret {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-left: 20px;
+  border: 2px solid red;
 }
 
-.feature-card {
-  border: 1px solid #ccc;
-  padding: 20px;
-  border-radius: 8px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+#confidential {
+  transform: rotate(-10deg);
 }
 
-/* Target checkboxes */
-.feature-card input[type="checkbox"] {
-  appearance: none;
-  -webkit-appearance: none;
-  width: 24px;
-  height: 24px;
-  border: 2px solid #888;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  position: relative;
+#top-secret {
+  transform: rotate(15deg);
 }
 
-/* When checked - background and border color */
-.feature-card input[type="checkbox"]:checked {
-  background-color: #4CAF50;
-  border-color: #2E7D32;
-}
-
-/* When checked - display checkmark */
-.feature-card input[type="checkbox"]:checked::after {
-  content: "✓";
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  position: absolute;
+.blurred {
+  filter: blur(3px);
 }

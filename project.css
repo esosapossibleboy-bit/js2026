@@ -1,26 +1,40 @@
-.pricing-container {
+#playing-cards {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
-.pricing-card {
+.card {
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+  height: 250px;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 10px; 
+  font-size: 20px;
+}
+
+.left {
+  align-self: flex-start;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  flex: 0 0 200px;
-  border: 2px solid black;
+  align-items: center;
+  font-size: 32px;
+  gap: 5px;
 }
 
-.basic-plan {
-  order: 0;
+.middle {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 32px;
+  gap: 5px;
 }
 
-.pro-plan {
-  order: 1;
-  flex-grow: 2;
-}
-
-.premium-plan {
-  order: 2;
-  
+.right {
+  align-self: flex-end;
+  transform: rotate(180deg);
 }
